@@ -1,0 +1,30 @@
+{
+  "name": "mig-meta-compare",
+  "version": "1.0.0",
+  "description": "Tool to compare migratrate meta fields",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bryanpizzillo/mig-meta-compare.git"
+  },
+  "author": "Bryan Pizzillo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bryanpizzillo/mig-meta-compare/issues"
+  },
+  "homepage": "https://github.com/bryanpizzillo/mig-meta-compare#readme",
+  "dependencies": {
+    "agentkeepalive": "^4.0.2",
+    "axios": "^0.18.0",
+    "config": "^3.1.0",
+    "loader-pipeline": "git+https://github.com/nciocpl/loader-pipeline.git#v1.1.0",
+    "sitemapper": "^2.2.0",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0"
+  }
+}

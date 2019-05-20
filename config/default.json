@@ -1,0 +1,30 @@
+{
+  "logging": {
+    "level": "info"
+  },
+  "pipeline": {
+    "source": {
+      "module": "./lib/sources/sitemap-source",
+      "config": {
+        "sitemapUrl": "https://www.cancer.gov/sitemaps/pageinstructions.xml",
+        "urlFilters": [
+          "^/sites/",
+          "^/nci/"
+        ]
+      }
+    },
+    "transformers": [
+      {
+        "module": "./lib/transformers/fetch-and-compare-transformer",
+        "config": {
+          "sourceHost": "https://www.cancer.gov",
+          "destinationHost": "http://ncigovcdode118.prod.acquia-sites.com"
+        }
+      }
+    ],
+    "loader": {
+      "module": "./lib/loaders/compare-issues-loader",
+      "config": { }
+    }
+  }
+}
