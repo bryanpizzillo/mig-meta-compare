@@ -15,10 +15,15 @@
     },
     "transformers": [
       {
-        "module": "./lib/transformers/fetch-and-compare-transformer",
+        "module": "./lib/transformers/fetch-transformer",
         "config": {
           "sourceHost": "https://www.cancer.gov",
           "destinationHost": "http://ncigovcdode118.prod.acquia-sites.com"
+        }
+      },
+      {
+        "module": "./lib/transformers/compare-transformer",
+        "config": {
         }
       }
     ],

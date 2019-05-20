@@ -20,6 +20,7 @@
     "agentkeepalive": "^4.0.2",
     "axios": "^0.18.0",
     "config": "^3.1.0",
+    "jsdom": "^15.1.0",
     "loader-pipeline": "git+https://github.com/nciocpl/loader-pipeline.git#v1.1.0",
     "sitemapper": "^2.2.0",
     "winston": "^3.2.1"
