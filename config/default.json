@@ -6,19 +6,18 @@
     "source": {
       "module": "./lib/sources/sitemap-source",
       "config": {
-        "sitemapUrl": "https://www.cancer.gov/sitemaps/pageinstructions.xml",
-        "urlFilters": [
-          "^/sites/",
-          "^/nci/"
-        ]
+        // "sitemapUrl": "https://www.cancer.gov/sitemaps/pageinstructions.xml",
+        "sitemapPath": "/Users/slackbits/Development/bryanpizzillo/mig-meta-compare/sitemap.xml",
+        "urlFilters": []
       }
     },
     "transformers": [
       {
         "module": "./lib/transformers/fetch-transformer",
         "config": {
-          "sourceHost": "https://www.cancer.gov",
-          "destinationHost": "http://ncigovcdode118.prod.acquia-sites.com"
+          "sourceHost": "https://colo.cancer.gov",
+          "destinationHost": "http://www-prod-acsf.cancer.gov",
+          "requestsPerHost": 5
         }
       },
       {

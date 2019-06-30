@@ -8,7 +8,11 @@ async function main() {
     // This should be based on a config really...
     const logger = winston.createLogger({
         level: config.has("logging.level") ? config.get("logging.level") : 'info',
-        format: winston.format.simple(),
+        format: winston.format.combine(
+          winston.format.timestamp(),
+          winston.format.simple(),
+          winston.format.printf(info => `${info.timestamp} ${info.level}: ${info.message}`)
+        ),
         transports: [
             new winston.transports.Console()
         ]

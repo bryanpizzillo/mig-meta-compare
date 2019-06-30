@@ -23,7 +23,8 @@
     "jsdom": "^15.1.0",
     "loader-pipeline": "git+https://github.com/nciocpl/loader-pipeline.git#v1.1.0",
     "sitemapper": "^2.2.0",
-    "winston": "^3.2.1"
+    "winston": "^3.2.1",
+    "xml2js-es6-promise": "^1.1.1"
   },
   "devDependencies": {
     "eslint": "^5.16.0"
